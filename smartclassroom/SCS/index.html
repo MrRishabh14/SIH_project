@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Classroom Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <h1>Classroom Management</h1>
+    <ul>
+      <li><a href="#attendance" class="active">Attendance</a></li>
+      <li><a href="#presentations">Presentations</a></li>
+      <li><a href="#questions">Q&A</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div id="attendance" class="section active">
+      <h2>Attendance</h2>
+      <button id="mark-present">Mark All Present</button>
+      <button id="mark-absent">Mark All Absent</button>
+      <ul id="student-list">
+      </ul>
+    </div>
+    <div id="presentations" class="section">
+      <h2>Presentations</h2>
+      <input type="file" id="presentation-file" accept=".pdf,.pptx,.ppt">
+      <div id="presentation-preview">
+      </div>
+    </div>
+    <div id="questions" class="section">
+      <h2>Q&A</h2>
+      <input type="text" id="question-input" placeholder="Ask a question...">
+      <button id="submit-question">Submit</button>
+      <ul id="question-list">
+      </ul>
+    </div>
+    <div id="resources" class="section">
+      <h2>Resources</h2>
+      <input type="file" id="resource-file" accept="*">
+      <button id="upload-resource">Upload Resource</button>
+      <ul id="resource-list">
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+     /* Sky Blue background */
+    color: #36454F; /* Charcoal text color */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+/*    background-color: #F5F5F5; *//* Warm Gray background */
+    background-color: #87CEEB;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.section.active {
+    display: block;
+}
+
+.sidebar h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #36454F;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #36454F;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #FAFAD2; /* Light Goldenrod Yellow hover */
+}
+
+.sidebar a.active {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+    background-color: #98FF98; /* Soft Mint Green button background */
+    color: #36454F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6A5ACD; /* Slate Blue on hover */
+}
+
+/* Inputs */
+input[type="text"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* List Items */
+ul#student-list li,
+ul#question-list li,
+ul#resource-list li {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Call-to-action elements */
+.call-to-action {
+    background-color: #FF6F61; /* Coral */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
